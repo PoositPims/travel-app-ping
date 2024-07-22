@@ -84,3 +84,10 @@ export const SOCIALS = {
     "/wordpress.svg",
   ],
 };
+
+export const TRAVEl_PICS = [
+  { image: "/yala-pic1.jpg" },
+  { image: "/yala-pic2.jpg" },
+  { image: "/yala-pic3.jpg" },
+  { image: "/yala-pic4.jpg" },
+];
