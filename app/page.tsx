@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <Hero />
       <Camp />
-      <Guide />
+      {/* <Guide />
       <Features />
-      <GetApp />
+      <GetApp /> */}
     </>
   );
 }

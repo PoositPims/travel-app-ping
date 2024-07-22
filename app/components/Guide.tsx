@@ -1,7 +1,7 @@
 import React from "react";
 
 function Guide() {
-  return <div>Guide</div>;
+  return <section>Guide</section>;
 }
 
 export default Guide;
