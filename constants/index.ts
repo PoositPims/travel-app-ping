@@ -86,8 +86,20 @@ export const SOCIALS = {
 };
 
 export const TRAVEl_PICS = [
+  { image: "/yala-pic6.jpg" },
+  { image: "/yala-pic5.jpeg" },
   { image: "/yala-pic1.jpg" },
   { image: "/yala-pic2.jpg" },
   { image: "/yala-pic3.jpg" },
   { image: "/yala-pic4.jpg" },
+];
+
+// image in Attraction (combine all pics first)
+export const ATTRACTION_PAGE_PICS = [
+  { title: "test title", image: "/yala-pic6.jpg", alt: "pic6" },
+  { title: "test title", image: "/yala-pic5.jpeg", alt: "pic5" },
+  { title: "test title", image: "/yala-pic1.jpg", alt: "pic1" },
+  { title: "test title", image: "/yala-pic2.jpg", alt: "pic2" },
+  { title: "test title", image: "/yala-pic3.jpg", alt: "pic3" },
+  { title: "test title", image: "/yala-pic4.jpg", alt: "pic4" },
 ];

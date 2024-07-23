@@ -33,7 +33,8 @@ function Carousel() {
             <Image
               src={image.image}
               alt={`Slide ${index}`}
-              className="w-full md:h-[80%] object-cover object-bottom bottom-0"
+              // className="w-full md:h-[80%] object-cover object-bottom bottom-0"
+              className="w-full object-cover object-bottom bottom-0"
               width={800}
               height={450}
             />
