@@ -1,8 +1,10 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ATTRACTION_PAGE_PICS, Attraction } from "@/constants/index";
 import Image from "next/image";
+import LeafletMap from "@/app/components/LeafletMap";
+
 function AttractionDetail({ params }: { params: { id: string } }) {
   const [picture, setPicture] = useState<Attraction | any>(null);
   const { id } = params;
@@ -15,8 +17,6 @@ function AttractionDetail({ params }: { params: { id: string } }) {
       }
     }
   }, [id]);
-
-  console.log("picture", picture);
 
   if (!id || !picture) {
     return <div className="max-container padding-container">Loading...</div>;
@@ -40,6 +40,9 @@ function AttractionDetail({ params }: { params: { id: string } }) {
         height={800}
         className="md:mx-auto"
       />
+      <div className="mt-10">
+        <LeafletMap />
+      </div>
     </div>
   );
 }
