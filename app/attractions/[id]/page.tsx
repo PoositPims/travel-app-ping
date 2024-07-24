@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
@@ -7,6 +8,8 @@ import LeafletMap from "@/app/components/LeafletMap";
 
 function AttractionDetail({ params }: { params: { id: string } }) {
   const [picture, setPicture] = useState<Attraction | any>(null);
+  const [latitude, setLatitude] = useState<Attraction | any>(null);
+  const [longitude, setLongitude] = useState<Attraction | any>(null);
   const { id } = params;
 
   useEffect(() => {
@@ -14,6 +17,8 @@ function AttractionDetail({ params }: { params: { id: string } }) {
       const attraction = ATTRACTION_PAGE_PICS.find((attr) => attr.id === id);
       if (attraction) {
         setPicture(attraction);
+        setLatitude(attraction.lat);
+        setLongitude(attraction.long);
       }
     }
   }, [id]);
@@ -24,8 +29,15 @@ function AttractionDetail({ params }: { params: { id: string } }) {
 
   return (
     <div className="max-container padding-container md:px-40 my-10">
-      <div className="mb-5">
-        <h1 className="text-3xl ">{picture.title}</h1>
+      <div className="mb-5 flex flex-col">
+        <Image
+          src={picture?.image}
+          alt={picture?.alt}
+          width={1000}
+          height={1000}
+          className="md:mx-auto md:order-1 md:mt-5 "
+        />
+        <h1 className="text-3xl mt-5 md:mt-0">{picture.title}</h1>
         <p className="mt-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Et optio
           corrupti repudiandae quaerat magnam saepe harum temporibus enim quam.
@@ -33,15 +45,9 @@ function AttractionDetail({ params }: { params: { id: string } }) {
           facere sint culpa!
         </p>
       </div>
-      <Image
-        src={picture?.image}
-        alt={picture?.alt}
-        width={800}
-        height={800}
-        className="md:mx-auto"
-      />
       <div className="mt-10">
-        <LeafletMap />
+        <h1 className="text-3xl mt-5 md:mt-0 mb-5">Map of attraction</h1>
+        <LeafletMap lat={latitude} long={longitude} />
       </div>
     </div>
   );

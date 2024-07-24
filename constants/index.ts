@@ -99,14 +99,58 @@ export interface Attraction {
   title: string;
   image: string;
   alt: string;
+  lat: string;
+  long: string;
 }
 
 // image in Attraction (combine all pics first)
 export const ATTRACTION_PAGE_PICS: Attraction[] = [
-  { id: "1", title: "test title", image: "/yala-pic6.jpg", alt: "pic6" },
-  { id: "2", title: "test title", image: "/yala-pic5.jpeg", alt: "pic5" },
-  { id: "3", title: "test title", image: "/yala-pic1.jpg", alt: "pic1" },
-  { id: "4", title: "พรุบาโกย", image: "/yala-pic2.jpg", alt: "pic2" },
-  { id: "5", title: "test title", image: "/yala-pic3.jpg", alt: "pic3" },
-  { id: "6", title: "test title", image: "/yala-pic4.jpg", alt: "pic4" },
+  {
+    id: "1",
+    title: "test title",
+    image: "/yala-pic6.jpg",
+    alt: "pic6",
+    lat: "",
+    long: "",
+  },
+  {
+    id: "2",
+    title: "test title",
+    image: "/yala-pic5.jpeg",
+    alt: "pic5",
+    lat: "",
+    long: "",
+  },
+  {
+    id: "3",
+    title: "test title",
+    image: "/yala-pic1.jpg",
+    alt: "pic1",
+    lat: "",
+    long: "",
+  },
+  {
+    id: "4",
+    title: "พรุบาโกย",
+    image: "/yala-pic2.jpg",
+    alt: "pic2",
+    lat: "6.541416807864021",
+    long: "101.27505077516143",
+  },
+  {
+    id: "5",
+    title: "test title",
+    image: "/yala-pic3.jpg",
+    alt: "pic3",
+    lat: "",
+    long: "",
+  },
+  {
+    id: "6",
+    title: "test title",
+    image: "/yala-pic4.jpg",
+    alt: "pic4",
+    lat: "",
+    long: "",
+  },
 ];
