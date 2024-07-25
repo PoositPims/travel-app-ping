@@ -1,8 +1,24 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import { RESTAURANT_MAIN_PAGE } from "@/constants";
+import { useRouter } from "next/navigation";
 
 function page() {
+  const router = useRouter();
+
+  function handleClick(id: number) {
+    // id 1 = tast of yala, id 2 = nightlife
+    console.log("id", id, typeof id);
+    if (id === 1) {
+      router.push("/restaurant/taste-of-yala");
+    } else if (id === 2) {
+      router.push("/restaurant/night-life");
+    }
+  }
+
   return (
     <div className="max-container mb-3">
       <Image
@@ -29,10 +45,13 @@ function page() {
                 alt={val.picture}
                 width={1000}
                 height={1000}
-                // md:w-11/12 md:h-11/12
-                className="mx-2 md:w-4/5 md:h-4/5 md:mx-auto"
+                className="mx-2 md:w-4/5 md:h-4/5 md:mx-auto cursor-pointer"
+                onClick={() => handleClick(val.id)}
               />
-              <div className="bg-red-100 pt-5 md:py-6 px-3 w-[90%] md:w-4/6 mx-auto -translate-y-12">
+              <div
+                className="bg-red-100 py-5 md:py-6 px-3 w-[90%] md:w-4/6 mx-auto -translate-y-12 cursor-pointer"
+                onClick={() => handleClick(val.id)}
+              >
                 <p className="text-xl font-bold">{val.title}</p>
                 <p className="mt-3">{val.text}</p>
               </div>

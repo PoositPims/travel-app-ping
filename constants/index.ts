@@ -123,7 +123,7 @@ export const ATTRACTION_PAGE_PICS: Attraction[] = [
   },
   {
     id: "3",
-    title: "test title",
+    title: "Test title",
     image: "/yala-pic1.jpg",
     alt: "pic1",
     lat: "",
@@ -158,9 +158,13 @@ export const ATTRACTION_PAGE_PICS: Attraction[] = [
 export const RESTAURANT_MAIN_PAGE = [
   {
     id: 1,
-    title: "taste of Yala",
+    title: "Taste of Yala",
     text: "get to know Yala through local food.",
-    picture: "/get-to-know-pic.jpg",
+    picture: "/get-to-know-pic.png",
+    restaurant: [
+      { id: 1, title: "Tara Yala", picture: "/restaurant-pic-1.jpeg" },
+      { id: 2, title: "Kuay Jap hea Sui", picture: "/restaurant-pic-2.jpeg" },
+    ],
   },
   {
     id: 2,
