@@ -154,3 +154,18 @@ export const ATTRACTION_PAGE_PICS: Attraction[] = [
     long: "",
   },
 ];
+
+export const RESTAURANT_MAIN_PAGE = [
+  {
+    id: 1,
+    title: "taste of Yala",
+    text: "get to know Yala through local food.",
+    picture: "/get-to-know-pic.jpg",
+  },
+  {
+    id: 2,
+    title: "Night Life",
+    text: "Yala also has a nightlife.",
+    picture: "/night-life-menu.png",
+  },
+];

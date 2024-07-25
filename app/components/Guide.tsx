@@ -10,7 +10,7 @@ function Guide() {
     <div className="max-container padding-container my-10">
       <h1 className="text-center text-4xl">Your Guide in Yala</h1>
       <div className="grid grid-cols-2 gap-3 mt-4 md:flex md:justify-center">
-        <div className="">
+        <div>
           <Link href="/attractions">
             <p className="bg-cyan-100 text-center p-16 md:px-28 md:py-18">
               <GrAttraction className="text-6xl" />
@@ -19,10 +19,12 @@ function Guide() {
           </Link>
         </div>
         <div>
-          <p className="bg-red-100 text-center p-16 md:px-28 md:py-18">
-            <IoRestaurantOutline className="text-6xl" />
-          </p>
-          <p className="text-center mt-2 text-xl">Restaurants</p>
+          <Link href="/restaurant">
+            <p className="bg-red-100 text-center p-16 md:px-28 md:py-18">
+              <IoRestaurantOutline className="text-6xl" />
+            </p>
+            <p className="text-center mt-2 text-xl">Restaurants</p>
+          </Link>
         </div>
         <div>
           <p className="bg-green-100 text-center p-16 md:px-28 md:py-18">
