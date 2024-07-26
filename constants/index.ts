@@ -49,20 +49,29 @@ export const FEATURES = [
 
 // FOOTER SECTION
 export const FOOTER_LINKS = [
+  // {
+  //   title: "Learn More",
+  //   links: [
+  //     "About Hilink",
+  //     "Press Releases",
+  //     "Environment",
+  //     "Jobs",
+  //     "Privacy Policy",
+  //     "Contact Us",
+  //   ],
+  // },
+  // {
+  //   title: "Our Community",
+  //   links: ["Climbing xixixi", "Hiking hilink", "Hilink kinthill"],
+  // },
   {
     title: "Learn More",
     links: [
-      "About Hilink",
-      "Press Releases",
-      "Environment",
-      "Jobs",
-      "Privacy Policy",
-      "Contact Us",
+      { title: "Attractions", link: "/attractions" },
+      { title: "Restaurants", link: "/restaurants" },
+      { title: "Accommodation", link: "/accommodation" },
+      { title: "Multiculturalism", link: "/multicultural" },
     ],
-  },
-  {
-    title: "Our Community",
-    links: ["Climbing xixixi", "Hiking hilink", "Hilink kinthill"],
   },
 ];
 
