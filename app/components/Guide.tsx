@@ -27,10 +27,12 @@ function Guide() {
           </Link>
         </div>
         <div>
-          <p className="bg-green-100 text-center p-16 md:px-28 md:py-18">
-            <MdOutlineHotel className="text-6xl" />
-          </p>
-          <p className="text-center mt-2 text-xl">Accommodation</p>
+          <Link href="/accommodation">
+            <p className="bg-green-100 text-center p-16 md:px-28 md:py-18">
+              <MdOutlineHotel className="text-6xl" />
+            </p>
+            <p className="text-center mt-2 text-xl">Accommodation</p>
+          </Link>
         </div>
         <div>
           <p className="bg-sky-100 text-center p-16 md:px-28 md:py-18">

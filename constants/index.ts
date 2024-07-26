@@ -197,3 +197,20 @@ export const RESTAURANT_MAIN_PAGE = [
     ],
   },
 ];
+
+export const ACCOMMODATION_MAIN_PAGE = [
+  {
+    id: 1,
+    title: "Boonrapee Hotel",
+    picture: "/boonrapee-pic.jpeg",
+    text: "Best location and very confort",
+    phone: "099-489-9449",
+  },
+  {
+    id: 2,
+    title: "@INN YRU",
+    picture: "/inn-yru.jpeg",
+    text: "Hotel in the University",
+    phone: "073-211-232",
+  },
+];

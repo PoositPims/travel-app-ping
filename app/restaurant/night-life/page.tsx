@@ -21,7 +21,7 @@ function page() {
             quae porro nemo doloremque illum odit sequi sit quasi quibusdam.
           </p>
         </div>
-        <div className="md:grid md:grid-cols-3 md:gap-5">
+        <div className="md:grid md:grid-cols-2 md:gap-5">
           {nightLife.club?.map((val) => (
             <div key={val.id} className="mt-5">
               <Image
