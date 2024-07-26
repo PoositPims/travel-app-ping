@@ -5,9 +5,10 @@ import "leaflet/dist/leaflet.css";
 interface LocationProps {
   lat: any;
   long: any;
+  name: string;
 }
 
-const LeafletMap: React.FC<LocationProps> = ({ lat, long }) => {
+const LeafletMap: React.FC<LocationProps> = ({ lat, long, name }) => {
   const mapContainer = useRef<HTMLDivElement | null>(null);
   const mapInstance = useRef<L.Map | null>(null);
 
@@ -50,7 +51,8 @@ const LeafletMap: React.FC<LocationProps> = ({ lat, long }) => {
       // );
       const marker = L.marker([lat, long], IconOptions);
       marker.addTo(mapInstance.current);
-      marker.bindPopup("<b>Suan Kwan Muang</b>").openPopup();
+      // marker.bindPopup("<b>Suan Kwan Muang</b>").openPopup();
+      marker.bindPopup(`<b>${name}</b>`).openPopup();
     }
 
     return () => {

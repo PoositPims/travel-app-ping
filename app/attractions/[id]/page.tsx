@@ -7,6 +7,7 @@ import Image from "next/image";
 import LeafletMap from "@/app/components/LeafletMap";
 
 function AttractionDetail({ params }: { params: { id: string } }) {
+  const [name, setName] = useState<Attraction | any>(null);
   const [picture, setPicture] = useState<Attraction | any>(null);
   const [latitude, setLatitude] = useState<Attraction | any>(null);
   const [longitude, setLongitude] = useState<Attraction | any>(null);
@@ -16,6 +17,7 @@ function AttractionDetail({ params }: { params: { id: string } }) {
     if (id) {
       const attraction = ATTRACTION_PAGE_PICS.find((attr) => attr.id === id);
       if (attraction) {
+        setName(attraction.title);
         setPicture(attraction);
         setLatitude(attraction.lat);
         setLongitude(attraction.long);
@@ -47,7 +49,7 @@ function AttractionDetail({ params }: { params: { id: string } }) {
       </div>
       <div className="mt-10">
         <h1 className="text-3xl mt-5 md:mt-0 mb-5">Map of attraction</h1>
-        <LeafletMap lat={latitude} long={longitude} />
+        <LeafletMap lat={latitude} long={longitude} name={name} />
       </div>
     </div>
   );
