@@ -8,8 +8,6 @@ import { TRAVEl_PICS } from "@/constants";
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  console.log("currentIndex", currentIndex);
-
   const prevSlide = () => {
     setCurrentIndex((prevIndex): any =>
       prevIndex === 0 ? TRAVEl_PICS.length - 1 : prevIndex - 1

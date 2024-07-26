@@ -11,7 +11,6 @@ function page() {
 
   function handleClick(id: number) {
     // id 1 = tast of yala, id 2 = nightlife
-    console.log("id", id, typeof id);
     if (id === 1) {
       router.push("/restaurant/taste-of-yala");
     } else if (id === 2) {
