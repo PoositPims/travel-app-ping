@@ -68,7 +68,7 @@ export const FOOTER_LINKS = [
     title: "Learn More",
     links: [
       { title: "Attractions", link: "/attractions" },
-      { title: "Restaurants", link: "/restaurants" },
+      { title: "Restaurants", link: "/restaurant" },
       { title: "Accommodation", link: "/accommodation" },
       { title: "Multiculturalism", link: "/multicultural" },
     ],
