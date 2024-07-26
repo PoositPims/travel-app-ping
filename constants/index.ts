@@ -162,8 +162,18 @@ export const RESTAURANT_MAIN_PAGE = [
     text: "get to know Yala through local food.",
     picture: "/get-to-know-pic.png",
     restaurant: [
-      { id: 1, title: "Tara Yala", picture: "/restaurant-pic-1.jpeg" },
-      { id: 2, title: "Kuay Jap hea Sui", picture: "/restaurant-pic-2.jpeg" },
+      {
+        id: 1,
+        title: "Tara Yala",
+        picture: "/restaurant-pic-1.jpeg",
+        text: "Best seafood in Yala",
+      },
+      {
+        id: 2,
+        title: "Kuay Jap hea Sui",
+        picture: "/restaurant-pic-2.jpeg",
+        text: "Best Kuay Jap in The world (By myself)",
+      },
     ],
   },
   {
@@ -171,5 +181,19 @@ export const RESTAURANT_MAIN_PAGE = [
     title: "Night Life",
     text: "Yala also has a nightlife.",
     picture: "/night-life-menu.png",
+    club: [
+      {
+        id: 1,
+        title: "Art Ane music club",
+        picture: "/art-ane-music-club.jpg",
+        text: "one of the best Jazz club in Southern part of Thailand",
+      },
+      {
+        id: 2,
+        title: "Tawandang yala",
+        picture: "/tawandang-yala.jpeg",
+        text: "Yala dance pub in Southern style",
+      },
+    ],
   },
 ];

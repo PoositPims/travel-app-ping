@@ -33,11 +33,11 @@ function page() {
                 alt={val.picture}
                 width={1000}
                 height={1000}
-                className="w-full h-64"
+                className="w-full h-64 object-cover"
               />
-              <div className="bg-red-100 py-5 md:py-6 px-3 w-[90%] md:w-4/6 mx-auto -translate-y-12 cursor-pointer">
+              <div className="bg-red-100 py-5 md:py-6 px-3 w-[90%] mx-auto -translate-y-12 ">
                 <p className="text-xl font-bold">{val.title}</p>
-                {/* <p className="mt-3">{val.text}</p> */}
+                <p className="mt-3">{val.text}</p>
               </div>
             </div>
           ))}
