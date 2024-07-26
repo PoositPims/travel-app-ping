@@ -214,3 +214,10 @@ export const ACCOMMODATION_MAIN_PAGE = [
     phone: "073-211-232",
   },
 ];
+
+export const MULTICULTURAL_MAIN_PAGE = [
+  { id: 1, title: "Buddhism", picture: "/buddhism.png" },
+  { id: 2, title: "Christianity", picture: "/christianity.png" },
+  { id: 3, title: "Sikhism", picture: "/sikhism.png" },
+  { id: 4, title: "Islam", picture: "/islam.png" },
+];

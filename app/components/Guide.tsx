@@ -35,10 +35,12 @@ function Guide() {
           </Link>
         </div>
         <div>
-          <p className="bg-sky-100 text-center p-16 md:px-28 md:py-18">
-            <VscOrganization className="text-6xl" />
-          </p>
-          <p className="text-center mt-2 text-xl">Multiculturalism</p>
+          <Link href="/multicultural">
+            <p className="bg-sky-100 text-center p-16 md:px-28 md:py-18">
+              <VscOrganization className="text-6xl" />
+            </p>
+            <p className="text-center mt-2 text-xl">Multiculturalism</p>
+          </Link>
         </div>
       </div>
     </div>
