@@ -8,7 +8,10 @@ function Navbar() {
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
         {/* <Image src="/hilink-logo.svg" alt="logo" width={74} height={29} /> */}
-        <p className="text-4xl">Visit Yala</p>
+        <p className="text-4xl">
+          Visit
+          <span className="border-b-4 border-green-50">Yala</span>
+        </p>
       </Link>
       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
@@ -21,22 +24,22 @@ function Navbar() {
           </Link>
         ))}
       </ul>
-      <div className="lg:flexCenter hidden">
+      {/* <div className="lg:flexCenter hidden">
         <Button
           type="button"
           title="Login"
           icon="/user.svg"
           variant="btn_dark_green"
         />
-      </div>
+      </div> */}
 
-      <Image
+      {/* <Image
         src="/menu.svg"
         alt="menu"
         width={32}
         height={32}
         className="inline-block cursor-pointer lg:hidden"
-      />
+      /> */}
     </nav>
   );
 }

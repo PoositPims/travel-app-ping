@@ -1,10 +1,10 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
-  { href: "/", key: "how_hilink_work", label: "How Hilink Work?" },
-  { href: "/", key: "services", label: "Services" },
-  { href: "/", key: "pricing ", label: "Pricing " },
-  { href: "/", key: "contact_us", label: "Contact Us" },
+  // { href: "/", key: "how_hilink_work", label: "How Hilink Work?" },
+  // { href: "/", key: "services", label: "Services" },
+  // { href: "/", key: "pricing ", label: "Pricing " },
+  // { href: "/", key: "contact_us", label: "Contact Us" },
 ];
 
 // CAMP SECTION
@@ -101,9 +101,9 @@ export const TRAVEl_PICS = [
   // { image: "/yala-pic2.jpg" },
   // { image: "/yala-pic3.jpg" },
   // { image: "/yala-pic4.jpg" },
+  { image: "/yala-pic-1.png" },
   { image: "/yala-pic-6.jpeg" },
   { image: "/yala-pic-5.png" },
-  { image: "/yala-pic-1.png" },
   { image: "/yala-pic-2.png" },
   { image: "/yala-pic-3.png" },
   { image: "/yala-pic-4.png" },

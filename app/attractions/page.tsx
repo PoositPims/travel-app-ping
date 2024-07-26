@@ -19,10 +19,12 @@ function Page() {
           <span className="border-b-4 mb-3 border-green-500">Things </span>
           you will see in Yala
         </h1>
-        <p className="mt-3">Let&apos;s explore Yala together</p>
-        <p>Then you will love Yala</p>
+        <div className="mt-5">
+          <p>Let&apos;s explore Yala together</p>
+          <p>Then you will love Yala</p>
+        </div>
       </div>
-      <div className="max-container mt-2 grid md:grid-cols-3 gap-5">
+      <div className="max-container grid md:grid-cols-3 gap-5">
         {ATTRACTION_PAGE_PICS.map((image) => (
           <div
             key={image.id}
