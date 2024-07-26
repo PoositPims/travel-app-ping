@@ -23,19 +23,20 @@ function Carousel() {
   };
 
   return (
-    <section className="relative md:h-96 overflow-hidden rounded-xl shadow-md">
+    <section className="h-60 md:h-full  relative overflow-hidden rounded-xl shadow-md">
       <div
-        className="flex transition-transform duration-500 ease-in-out "
+        className="flex transition-transform duration-500 md:h-[400px] ease-in-out "
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {TRAVEl_PICS.map((image, index) => (
-          <div key={index} className="w-full  flex-shrink-0 overflow-hidden">
+          <div key={index} className="w-full flex-shrink-0">
             <Image
               src={image.image}
               alt={`Slide ${index}`}
-              className="w-full object-cover object-bottom bottom-0"
-              width={900}
-              height={900}
+              // className="w-full object-cover object-bottom bottom-0"
+              className="md:h-[600px] md:w-full object-cover bottom-0"
+              width={1000}
+              height={1000}
             />
           </div>
         ))}
